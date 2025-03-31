@@ -34,7 +34,7 @@ struct ServerState {
 impl ServerState {
     fn new() -> Result<Self> {
         // read cards and form array of file names, any file is ok
-        let base_deck: Vec<String> = fs::read_dir("../static/assets/cards/")?
+        let base_deck: Vec<String> = fs::read_dir("cards/")?
             .map(|res| res.map(|e| e.file_name().into_string().unwrap()))
             .map(|res| res.unwrap())
             .filter(|s| s.ends_with(".jpg") || s.ends_with(".jpeg") || s.ends_with(".png"))
