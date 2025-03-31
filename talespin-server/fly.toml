@@ -10,7 +10,7 @@ primary_region = 'cdg'
 
 [env]
   PORT = '8080'
-  RUST_BACKTRACE=1
+  RUST_BACKTRACE=full
 
 [http_service]
   internal_port = 8080
