@@ -1,9 +1,10 @@
 import { browser } from "$app/environment";
 //export const production = browser ? window.location.href.includes('talespin.live') : false;
 export const production = true;
+//export const production = false;
 
 //export const host = production ? 'api.talespin.live' : '127.0.0.1:8081';
-export const host = production ? 'talespin-kqetmw.fly.dev' : '127.0.0.1:8081';
+export const host = production ? 'talespin-kqetmw.fly.dev' : '127.0.0.1:8080';
 export const http_host = `${production ? 'https' : 'http'}://${host}`;
 export const ws_host = `${production ? 'wss' : 'ws'}://${host}`;
 export const ws_url = `${ws_host}/ws`;
