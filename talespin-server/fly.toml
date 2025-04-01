@@ -9,7 +9,6 @@ primary_region = 'cdg'
 [build]
 
 [env]
-  PORT=8081
   RUST_BACKTRACE=1
 
 [http_service]
