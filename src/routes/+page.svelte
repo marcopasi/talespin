@@ -59,9 +59,26 @@
 	<h1 class="h1">
 		<span
 			class="bg-gradient-to-br from-red-500 to-yellow-500 bg-clip-text text-transparent box-decoration-clone"
-			>Play Talespin!</span
+			>Al confine!</span
 		>
 	</h1>
+	<h4 class="h4"
+        style="line-height:1.0rem"
+    >
+		<span
+			class="bg-gradient-to-br from-yellow-500 to-red-500 bg-clip-text text-transparent box-decoration-clone"
+			>...del celibato</span
+		>
+	</h4>
+	<h5 class="h5"
+        style="line-height:1.0rem"
+    >
+		<span
+			class="bg-gradient-to-b from-indigo-100 to-indigo-950 bg-clip-text text-transparent box-decoration-clone"
+            style="font-size:0.75rem"
+			>Storie di vita ai confini della realtà.</span
+		>
+	</h5>
 
 	<div class="card p-4 mt-8">
 		<div class="mb-4">
@@ -76,7 +93,7 @@
 
 		{#if joinGameClicked}
 			<div transition:fade>
-				<label for="roomCode">Room Code:</label>
+				<label for="roomCode">Room code:</label>
 				<input
 					type="text"
 					id="roomCode"
@@ -87,8 +104,8 @@
 		{/if}
 
 		<div class="flex justify-between mb-4">
-			<button on:click={() => createGame()} class="btn variant-filled">Create Game</button>
-			<button on:click={() => joinGame()} class="btn variant-filled">Join Game</button>
+			<button on:click={() => createGame()} class="btn variant-filled">New game</button>
+			<button on:click={() => joinGame()} class="btn variant-filled">Join game</button>
 		</div>
 	</div>
 	<div class="flex justify-center mt-4">
