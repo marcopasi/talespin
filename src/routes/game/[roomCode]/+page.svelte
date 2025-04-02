@@ -123,7 +123,9 @@
 </script>
 
 <div class="pt-10 w-full">
-	<div class="flex flex-row justify-center">
+	<div class="flex flex-row justify-center"
+         style="flex-direction: column"
+    >
 		<div>
 			{#if stage !== 'Joining' && stage !== 'End'}
 				<div class="p-5">

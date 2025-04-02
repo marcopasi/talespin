@@ -4,7 +4,7 @@
 	export let selectedImage = '';
 </script>
 
-<section class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-5 max-w-2xl">
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5 max-w-2xl">
 	{#if selectable}
 		{#each displayImages as image}
 			<div class="group" on:click={() => (selectedImage = image)}>
